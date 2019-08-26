@@ -11,8 +11,8 @@ import SceneKit
 
 class MainScene: SCNScene {
     
-    var aboutMeNode :SCNNode = SCNNode()
-    var projectsNode :SCNNode = SCNNode()
+    var aboutMeNode: SCNNode = SCNNode()
+    var projectsNode: SCNNode = SCNNode()
     
     override init() {
         super.init()

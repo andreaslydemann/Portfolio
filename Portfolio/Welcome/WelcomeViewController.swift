@@ -24,8 +24,7 @@ class WelcomeViewController: UIViewController {
             NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 22)!,
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
-        let regularAttribute: [NSAttributedString.Key : Any]
-            = [
+        let regularAttribute: [NSAttributedString.Key : Any] = [
             NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Thin", size: 20)!,
             NSAttributedString.Key.foregroundColor: UIColor.gray
         ]

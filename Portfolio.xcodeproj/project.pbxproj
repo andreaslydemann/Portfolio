@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0A686423143DCC00248BCA /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A686323143DCC00248BCA /* AboutMeViewController.swift */; };
+		8E0A6867231442EE00248BCA /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6866231442EE00248BCA /* ProjectsViewController.swift */; };
 		8E3E21FC2312D48000EA017F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E21FB2312D48000EA017F /* AppDelegate.swift */; };
 		8E3E21FE2312D48000EA017F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E21FD2312D48000EA017F /* MainViewController.swift */; };
 		8E3E22032312D48200EA017F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E22022312D48200EA017F /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E0A686323143DCC00248BCA /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		8E0A6866231442EE00248BCA /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		8E3E21F82312D48000EA017F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E21FB2312D48000EA017F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E21FD2312D48000EA017F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0A686223143DAC00248BCA /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A686323143DCC00248BCA /* AboutMeViewController.swift */,
+			);
+			path = "About Me";
+			sourceTree = "<group>";
+		};
+		8E0A6865231442D900248BCA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A6866231442EE00248BCA /* ProjectsViewController.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		8E3E21EF2312D48000EA017F = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +84,8 @@
 		8E3E21FA2312D48000EA017F /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				8E0A6865231442D900248BCA /* Projects */,
+				8E0A686223143DAC00248BCA /* About Me */,
 				8E3E22212313B9A300EA017F /* Utilities */,
 				8E3E221E2312E28800EA017F /* Main */,
 				8E3E221D2312E27100EA017F /* Welcome */,
@@ -204,7 +226,9 @@
 				8E3E22202312E29D00EA017F /* WelcomeViewController.swift in Sources */,
 				8E3E22242313B9F100EA017F /* UIView+Ext.swift in Sources */,
 				8E3E21FE2312D48000EA017F /* MainViewController.swift in Sources */,
+				8E0A686423143DCC00248BCA /* AboutMeViewController.swift in Sources */,
 				8E3E21FC2312D48000EA017F /* AppDelegate.swift in Sources */,
+				8E0A6867231442EE00248BCA /* ProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
