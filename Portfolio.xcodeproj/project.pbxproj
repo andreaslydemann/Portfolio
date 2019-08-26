@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E0A686423143DCC00248BCA /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A686323143DCC00248BCA /* AboutMeViewController.swift */; };
 		8E0A6867231442EE00248BCA /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6866231442EE00248BCA /* ProjectsViewController.swift */; };
+		8E0A686B2314588500248BCA /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A686A2314588500248BCA /* me.png */; };
 		8E3E21FC2312D48000EA017F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E21FB2312D48000EA017F /* AppDelegate.swift */; };
 		8E3E21FE2312D48000EA017F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E21FD2312D48000EA017F /* MainViewController.swift */; };
 		8E3E22032312D48200EA017F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E22022312D48200EA017F /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		8E0A686323143DCC00248BCA /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		8E0A6866231442EE00248BCA /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		8E0A686A2314588500248BCA /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
 		8E3E21F82312D48000EA017F /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E21FB2312D48000EA017F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E21FD2312D48000EA017F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,24 @@
 			path = Projects;
 			sourceTree = "<group>";
 		};
+		8E0A68682314581200248BCA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E221B2312D90600EA017F /* Projects.png */,
+				8E3E22112312D83C00EA017F /* BackgroundPattern.png */,
+				8E3E22142312D84300EA017F /* AboutMe.png */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		8E0A68692314581C00248BCA /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A686A2314588500248BCA /* me.png */,
+			);
+			path = "About Me";
+			sourceTree = "<group>";
+		};
 		8E3E21EF2312D48000EA017F = {
 			isa = PBXGroup;
 			children = (
@@ -99,21 +119,20 @@
 		8E3E220F2312D7CC00EA017F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E22102312D7DF00EA017F /* Scene Images */,
+				8E3E22102312D7DF00EA017F /* Images */,
 				8E3E22022312D48200EA017F /* Assets.xcassets */,
 				8E3E22042312D48200EA017F /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8E3E22102312D7DF00EA017F /* Scene Images */ = {
+		8E3E22102312D7DF00EA017F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E221B2312D90600EA017F /* Projects.png */,
-				8E3E22112312D83C00EA017F /* BackgroundPattern.png */,
-				8E3E22142312D84300EA017F /* AboutMe.png */,
+				8E0A68692314581C00248BCA /* About Me */,
+				8E0A68682314581200248BCA /* Scene */,
 			);
-			path = "Scene Images";
+			path = Images;
 			sourceTree = "<group>";
 		};
 		8E3E221D2312E27100EA017F /* Welcome */ = {
@@ -210,6 +229,7 @@
 				8E3E22182312D84300EA017F /* AboutMe.png in Resources */,
 				8E3E22122312D83C00EA017F /* BackgroundPattern.png in Resources */,
 				8E3E22062312D48200EA017F /* LaunchScreen.storyboard in Resources */,
+				8E0A686B2314588500248BCA /* me.png in Resources */,
 				8E3E22032312D48200EA017F /* Assets.xcassets in Resources */,
 				8E3E221C2312D90600EA017F /* Projects.png in Resources */,
 			);
