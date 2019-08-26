@@ -15,6 +15,8 @@
 		8E3E22122312D83C00EA017F /* BackgroundPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E22112312D83C00EA017F /* BackgroundPattern.png */; };
 		8E3E22182312D84300EA017F /* AboutMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E22142312D84300EA017F /* AboutMe.png */; };
 		8E3E221C2312D90600EA017F /* Projects.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E221B2312D90600EA017F /* Projects.png */; };
+		8E3E22202312E29D00EA017F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E221F2312E29D00EA017F /* WelcomeViewController.swift */; };
+		8E3E22242313B9F100EA017F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E22232313B9F100EA017F /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8E3E22112312D83C00EA017F /* BackgroundPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundPattern.png; sourceTree = "<group>"; };
 		8E3E22142312D84300EA017F /* AboutMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AboutMe.png; sourceTree = "<group>"; };
 		8E3E221B2312D90600EA017F /* Projects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Projects.png; sourceTree = "<group>"; };
+		8E3E221F2312E29D00EA017F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8E3E22232313B9F100EA017F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,11 @@
 		8E3E21FA2312D48000EA017F /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E22212313B9A300EA017F /* Utilities */,
+				8E3E221E2312E28800EA017F /* Main */,
+				8E3E221D2312E27100EA017F /* Welcome */,
 				8E3E220F2312D7CC00EA017F /* Supporting Files */,
 				8E3E21FB2312D48000EA017F /* AppDelegate.swift */,
-				8E3E21FD2312D48000EA017F /* MainViewController.swift */,
-				8E3E220D2312D50500EA017F /* MainScene.swift */,
 				8E3E22072312D48200EA017F /* Info.plist */,
 			);
 			path = Portfolio;
@@ -87,6 +92,39 @@
 				8E3E22142312D84300EA017F /* AboutMe.png */,
 			);
 			path = "Scene Images";
+			sourceTree = "<group>";
+		};
+		8E3E221D2312E27100EA017F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E221F2312E29D00EA017F /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		8E3E221E2312E28800EA017F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E21FD2312D48000EA017F /* MainViewController.swift */,
+				8E3E220D2312D50500EA017F /* MainScene.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E3E22212313B9A300EA017F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E22222313B9CC00EA017F /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8E3E22222313B9CC00EA017F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E22232313B9F100EA017F /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3E220E2312D50500EA017F /* MainScene.swift in Sources */,
+				8E3E22202312E29D00EA017F /* WelcomeViewController.swift in Sources */,
+				8E3E22242313B9F100EA017F /* UIView+Ext.swift in Sources */,
 				8E3E21FE2312D48000EA017F /* MainViewController.swift in Sources */,
 				8E3E21FC2312D48000EA017F /* AppDelegate.swift in Sources */,
 			);

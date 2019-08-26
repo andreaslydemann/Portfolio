@@ -13,8 +13,6 @@ class MainViewController: UIViewController {
     
     let mainScene = MainScene()
     
-    // MARK: Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,14 +31,19 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         mainScene.startAnimations()
         
-        //Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(welcome), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(welcome), userInfo: nil, repeats: false)
     }
     
-    // MARK: Methods
-    
-    /*@objc func welcome() {
-        self.presentViewController("Welcome")
-    }*/
+    @objc func welcome() {
+        let vc = WelcomeViewController()
+        
+        let navController = UINavigationController(rootViewController: vc)
+        navController.modalPresentationStyle = .overCurrentContext
+        navController.modalTransitionStyle = .crossDissolve
+        navController.isNavigationBarHidden = true
+        
+        self.present(navController, animated: true, completion: nil)
+    }
     
     @objc func handleTouch(_ gestureRecognizer: UIGestureRecognizer) {
         
@@ -54,7 +57,6 @@ class MainViewController: UIViewController {
             let material = result.node!.geometry!.firstMaterial!
             let name = result.node!.name!
             
-            // highlight it and present view controller
             SCNTransaction.begin()
             SCNTransaction.animationDuration = 0.5
             SCNTransaction.completionBlock = {() -> Void in
