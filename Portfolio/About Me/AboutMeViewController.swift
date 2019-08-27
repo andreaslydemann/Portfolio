@@ -19,12 +19,11 @@ class AboutMeViewController: UIViewController {
         return label
     }()
     
-    lazy var imageView: UIImageView = {
+    let imageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "me"))
-        imageView.contentMode = .scaleAspectFit
         imageView.layer.borderWidth = 1.0
         imageView.layer.borderColor = UIColor.gray.cgColor
-        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.layer.cornerRadius = 200 / 2
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -49,7 +48,8 @@ class AboutMeViewController: UIViewController {
         view.addSubview(imageView)
         view.addSubview(myLabel)
         
-        imageView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 100, left: 50, bottom: 0, right: 50))
+        imageView.centerHorizontallyInSuperview(size: CGSize(width: 200, height: 200))
+        imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 120).isActive = true
         myLabel.anchor(top: imageView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 15, left: 0, bottom: 0, right: 0))
     }
     
