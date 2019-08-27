@@ -14,7 +14,7 @@ class ProjectsViewController: UIViewController {
     
     let myLabel: UILabel = {
         let label = UILabel()
-        label.text = "Projects"
+        label.text = "Check out these projects"
         label.textAlignment = .center
         return label
     }()
@@ -24,14 +24,21 @@ class ProjectsViewController: UIViewController {
         
         setupNavigationItems()
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         view.addSubview(myLabel)
         
         myLabel.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
     
     private func setupNavigationItems() {
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.202, green:0.808, blue:0.459, alpha:1)
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Light", size: 20)!,
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
         navigationItem.rightBarButtonItem = closeButton
+        navigationItem.rightBarButtonItem?.tintColor = .white
         navigationItem.title = "Projects"
     }
     
