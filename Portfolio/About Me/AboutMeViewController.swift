@@ -50,6 +50,7 @@ Andreas Lüdemann.
             NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Thin", size: 18)!,
             NSAttributedString.Key.foregroundColor: UIColor.black
             ])
+        label.textAlignment = .justified
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
